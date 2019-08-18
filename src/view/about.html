@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%= require('html-loader!./layout/head-common.html')  %>
+        <title><%= htmlWebpackPlugin.options.title%> </title>
+    </head>
+    <body>
+        <%= require('html-loader!./layout/nav.html')  %>
+        <%= require('html-loader!./layout/header.html')  %>
+        <div class="crumb">
+            <div class="w">
+                <div class="crumb-con">
+                    <a class="link" href="./index.html"> Qeball</a>
+                    <span>></span>
+                    <span class="link-text"><%= htmlWebpackPlugin.options.title%></span>
+                </div>
+            </div>
+        </div>
+        <div class="page-wrap w">
+            <div class="panel">
+                <h1 class="panel-title">关于Qeball</h1>
+                <div class="panel-body">
+                    <h1>欢迎访问Qeball。这是一个个人项目网站。是一个完整的电商网站。</h1>
+                    <h4>从初始化到上线发布的纯JS开发的多页面的网页，框架仅使用了jQuery。
+                         前后端分离。使用webpack打包，数据交互，协同开发...</h4>
+                    <ul>
+                        <h3>功能模块：</h3>
+                        <li>用户模块（注册、登录、找回密码、个人中心（修改个人信息）、修改密码）</li>
+                        <li>商品模块（首页、商品列表页、商品详情页）</li>
+                        <li>购物车模块</li>
+                        <li>订单模块（订单页（地址管理）、订单列表页、订单详情页）</li>
+                        <li>支付模块</li>
+                    </ul>
+                    <ul>
+                        <h3>网站技术&配置:</h3>
+                        <li>技术栈：Html+CSS+JavaScript+JQuery</li>
+                        <li>模块化方案：CommonJS+Webpack    </li>
+                        <li>版本控制工具：Git</li>
+                        <li>架构模式：前后端完全分离，纯静态方式，分层架构模块化</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <%= require('html-loader!./layout/footer.html')  %>
+    </body>
+</html>

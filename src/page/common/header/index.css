@@ -1,0 +1,91 @@
+
+/* 通用头部导航 */
+.header .logo{
+    position: absolute;
+    left: 40px;
+    top: 18px;
+    display: block;
+    font-size: 36px;
+    color: #c60023;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header .tr-Box{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color:white;
+    font-weight: bold;
+    position: absolute;  
+    left: 180px;
+    top: 24px;  
+    text-align: center;
+    transform-style:preserve-3d;
+    animation: move 5s infinite ;
+}
+.tr-Box .tran-box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size:14px;
+}
+.tr-Box .tran-box.front{
+    transform: translateZ(20px);
+    background: rgba(233, 41, 41, 0.6);
+}
+.tr-Box .tran-box.back{
+    transform: rotateX(180deg) translateZ(20px);
+    background: rgba(104, 199, 104, 0.6);
+}
+.tr-Box .tran-box.left{
+    transform: rotateY(-90deg) translateZ(20px);
+    background: rgb(68, 68, 199);
+}
+.tr-Box .tran-box.right{
+    transform: rotateY(90deg) translateZ(20px);
+    background: rgba(224, 139, 27, 0.6);
+}
+.tr-Box .tran-box.top{
+    transform:rotateX(90deg) translateZ(20px);
+    background: rgba(255, 0, 255, 0.6);
+}
+.tr-Box .tran-box.bottom{
+    transform: rotateX(-90deg) translateZ(20px);
+    background: rgba(255, 255, 1, 0.6);
+}
+@keyframes move {
+    from{
+
+    }
+    to{
+        transform:rotateX(360deg) rotateY(360deg); 
+    }
+}
+.header .search-con{
+    padding: 20px 0 30px 280px;
+}
+.header .search-con .search-input{
+    width: 550px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 15px;
+    border: 2px solid #c60023;
+    outline: none;
+}
+.header .search-con .search-btn{
+    position: absolute;
+    height: 44px;
+    width: 80px;
+}
+
+/* 面包屑导航 */
+.crumb{
+    margin-bottom: 15px;
+    height: 50px;
+    line-height: 50px;
+    background: #eee;
+    color: #888;
+    font-size: 14px;
+    border-top: 2px solid #c60023;
+}

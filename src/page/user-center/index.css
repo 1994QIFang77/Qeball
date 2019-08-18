@@ -1,0 +1,19 @@
+
+
+.form-line{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 40px;
+}
+.form-line .label{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+.user-info .btn-submit{
+    padding: -1px 13px;
+    font-size: 14px;
+    margin: 6px 80px;
+    border-radius: 3px;
+}
