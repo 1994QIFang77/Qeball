@@ -94,7 +94,7 @@ webpack的打包过程：
 	* {{#imageList}} {{/imageList}} : 遍历imageList集合， {{.}} 表示集中的item
 	* {{^title}} message{{title}}： title不存在的时候显示message
 
-### 封层架构
+### 分层架构
 * 逻辑层：page文件     ->   用于js、css的实现
 * 数据层：service文件  ->   用于数据交互，请求数据
 * 工具层：uitl文件     ->   一些显示某些特定功能的工具（轮播图插件、地址二级联动、分页...）
