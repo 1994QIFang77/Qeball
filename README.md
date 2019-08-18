@@ -4,7 +4,7 @@
 这是一个基于Common.js规范，采用webpack打包和npm包管理工具的电商平台。
 整个项目从需求分析到项目的脚手架，再到业务代码的开发以及最后的项目上线，都由本人一个人完成。
 ## 线上访问地址：http://129.204.58.235  (本人还没申请域名 = =|| )
-### 注，以上使用的数据接口都来源于[https://gitee.com/imooccode/happymmallwiki/wikis/Home]
+### 注，项目中使用的数据接口都来源于[https://gitee.com/imooccode/happymmallwiki/wikis/Home]
 ## 项目功能模块
 
 * 用户模块（注册、登录、找回密码、个人中心（修改个人信息）、修改密码）
